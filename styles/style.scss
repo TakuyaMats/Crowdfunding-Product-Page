@@ -14,11 +14,20 @@ header {
     background: lightblue;
 }
 
-.navbar-light {
-    background-image: url(../images/image-hero-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+.navbar-expand-lg {
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
-// add the navbar image in a separate html element.
+.bg-img {
+    background-image: url(../images/image-hero-desktop.jpg);
+    min-height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
+// * Try to override the default bootstrap color to pure white on the navbar

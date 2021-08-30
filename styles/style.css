@@ -12,9 +12,17 @@ header {
   background: lightblue;
 }
 
-.navbar-light {
+.navbar-expand-lg a {
+  text-decoration: none;
+  color: white;
+}
+
+.bg-img {
   background-image: url(../images/image-hero-desktop.jpg);
+  min-height: 25rem;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
