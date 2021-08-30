@@ -13,3 +13,12 @@ box-sizing: inherit;
 header {
     background: lightblue;
 }
+
+.navbar-light {
+    background-image: url(../images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+// add the navbar image in a separate html element.
+

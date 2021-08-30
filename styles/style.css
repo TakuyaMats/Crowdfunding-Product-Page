@@ -11,4 +11,10 @@ html {
 header {
   background: lightblue;
 }
+
+.navbar-light {
+  background-image: url(../images/image-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 /*# sourceMappingURL=style.css.map */
