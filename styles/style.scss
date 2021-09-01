@@ -1,8 +1,14 @@
+$backgroundColor: #fffafa;
+$colorWhite: white;
+$buttonColor: #3BB4AD;
+
+@import './hero';
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #fffafa;
+    background-color: $backgroundColor;
 }
 
 *, *:before, *:after {
@@ -18,7 +24,7 @@ header {
 .navbar-expand-lg {
     a {
         text-decoration: none;
-        color: white;
+        color: $colorWhite;
     }
 }
 
@@ -33,38 +39,5 @@ header {
 
 // * Try to override the default bootstrap color to pure white on the navbar
 
-.container-hero {
-    text-align: center;
-    font-size: 12px;
-    background-color: white;
-    position: fixed;
-    padding: 5rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 2%;
-    h4 {
-        font-weight: bold;
-    }
-    p {
-        color: darkgrey;
-    }
-    .hero_buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2rem;
-    }
-    .project-button {
-        border-radius: 25px;
-        background-color: #3BB4AD;
-        color: white;
-        font-size: 12px;
-        max-height: 3rem;
-        min-width: 10rem;
-    }
-    .hero-logo {
-        position: fixed;
-        padding: 5rem;
-        left: 50%;
-        transform: translate(-50%, -85%);
-    }
-}
+
+
