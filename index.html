@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./styles/style.css">
   <title>Frontend Mentor | Crowdfunding product page</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-<div class="bg-img">
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-    <a class="navbar-brand">
-      <img src="./images/logo.svg" alt="icon">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ml-auto">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item ml-auto">
-          <a class="nav-link" href="#">Discover</a>
-        </li>
-        <li class="nav-item ml-auto">
-          <a class="nav-link" href="#">Get Started</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-
-  <div class="container-hero">
-    <img class="hero-logo" src="./images/logo-mastercraft.svg" alt="logo">
-    <!-- Make this bold -->
-    <h4>Mastercraft Bamboo Monitor Riser</h4>
-    <!-- color is a bit light grey -->
-    <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
-    <div class="container hero_buttons">
-      <button type="button" class="btn btn-default btn-sm project-button">Back this project</button>
-      <button type="button" class="btn btn-default">
-        <img src="./images/icon-bookmark.svg" alt="bookmark">
-        Bookmark
+  <div class="bg-img">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <a class="navbar-brand">
+        <img src="./images/logo.svg" alt="icon">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
+
+      <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">Discover</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
-  <div class="container-fund">
-    <div class="row">
-      <div class="col-lg">
-        <h4>$89,914</h4>
-        <p>of $100,000 backed</p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div class="container-hero">
+          <img class="hero-logo" src="./images/logo-mastercraft.svg" alt="logo">
+          <h4>Mastercraft Bamboo Monitor Riser</h4>
+          <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+          <div class="container hero_buttons">
+            <button type="button" class="btn btn-default btn-sm project-button">Back this project</button>
+            <button type="button" class="btn btn-default">
+              <img src="./images/icon-bookmark.svg" alt="bookmark">
+              Bookmark
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="col-lg">
-        <h4>5,007</h4>
-        <p>total backers</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div class="container-fund">
+          <div class="row">
+            <div class="col-lg">
+              <h4>$89,914</h4>
+              <p>of $100,000 backed</p>
+            </div>
+            <div class="vl"></div>
+            <div class="col-lg">
+              <h4>5,007</h4>
+              <p>total backers</p>
+            </div>
+            <div class="vl"></div>
+            <div class="col-lg">
+              <h4>56</h4>
+              <p>days left</p>
+            </div>
+          </div>
+          <!-- add a progress bar using javascript? -->
+        </div>
       </div>
-      <div class="col-lg">
-        <h4>56</h4>
-        <p>days left</p>
-      </div>
-    </div> 
-    <!-- add a progress bar using javascript? -->
+    </div>
   </div>
 
   <!-- About this project
@@ -124,7 +141,7 @@
   $25
   Continue -->
   <!-- Selected pledge end -->
-<!-- 
+  <!-- 
   Black Edition Stand
   Pledge $75 or more
   You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
@@ -159,8 +176,15 @@
   Got it! -->
 
   <!-- Success modal end -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>

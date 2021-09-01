@@ -1,6 +1,7 @@
-$backgroundColor: #fffafa;
+$backgroundColor: black;
 $colorWhite: white;
 $buttonColor: #3BB4AD;
+$pColor: darkgrey;
 
 @import './hero';
 
@@ -15,10 +16,6 @@ html {
 -webkit-box-sizing: inherit;
 -moz-box-sizing: inherit;
 box-sizing: inherit;
-}
-
-header {
-    background: lightblue;
 }
 
 .navbar-expand-lg {
@@ -37,7 +34,36 @@ header {
     position: relative;
 }
 
-// * Try to override the default bootstrap color to pure white on the navbar
+.container-fund {
+    text-align: center;
+    font-size: 12px;
+    background-color: $colorWhite;
+    position: fixed;
+    padding: 5rem;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    border-radius: 2%;
+    h4 {
+        font-weight: bold;
+    }
+    p {
+        color: $pColor;
+    }
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    .vl {
+        border-left: 2px solid lightgrey;
+        height: 4rem;
+    }
+}
 
 
-
+// FIX THESE BUGS!!!
+// implement the containers dynamically to the page.
+// Try to override the default bootstrap color to pure white on the navbar.
+// Work on the Bookmark button.
+// Figure out how to implement the progress bar. 
+// Look into how all the containers align perfectly the same size.
+// Look for a different font-family that fits with the design.

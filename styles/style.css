@@ -48,16 +48,12 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #fffafa;
+  background-color: black;
 }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-}
-
-header {
-  background: lightblue;
 }
 
 .navbar-expand-lg a {
@@ -72,5 +68,38 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.container-fund {
+  text-align: center;
+  font-size: 12px;
+  background-color: white;
+  position: fixed;
+  padding: 5rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 70%);
+          transform: translate(-50%, 70%);
+  border-radius: 2%;
+}
+
+.container-fund h4 {
+  font-weight: bold;
+}
+
+.container-fund p {
+  color: darkgrey;
+}
+
+.container-fund .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-fund .vl {
+  border-left: 2px solid lightgrey;
+  height: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
